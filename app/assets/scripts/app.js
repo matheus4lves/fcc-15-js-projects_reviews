@@ -59,6 +59,11 @@ prevBtn.addEventListener("click", () => {
   showPerson(currentItem);
 });
 
+randomBtn.addEventListener("click", () => {
+  currentItem = Math.random() * reviews.length;
+  showPerson(Math.floor(currentItem));
+});
+
 // Function definition
 function showPerson(person) {
   // Assing the first object inside the reviews array to the variable item
